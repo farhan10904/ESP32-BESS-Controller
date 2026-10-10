@@ -37,7 +37,7 @@ def plot_scenario(name, filename):
     fig.tight_layout()
 
     fig.savefig(
-        RESULTS_DIR / f"{name}_soc.png",
+        str(RESULTS_DIR / f"{name}_soc.png"),
         dpi=300
     )
     plt.close(fig)
@@ -61,7 +61,7 @@ def plot_scenario(name, filename):
     fig.tight_layout()
 
     fig.savefig(
-        RESULTS_DIR / f"{name}_temperature.png",
+        str(RESULTS_DIR / f"{name}_temperature.png"),
         dpi=300
     )
     plt.close(fig)
@@ -100,7 +100,7 @@ def plot_scenario(name, filename):
     fig.tight_layout()
 
     fig.savefig(
-        RESULTS_DIR / f"{name}_power.png",
+        str(RESULTS_DIR / f"{name}_power.png"),
         dpi=300
     )
     plt.close(fig)
@@ -146,7 +146,7 @@ def plot_dynamic_scenario():
     fig.tight_layout()
 
     fig.savefig(
-        RESULTS_DIR / "dynamic_power.png",
+        str(RESULTS_DIR / "dynamic_power.png"),
         dpi=300
     )
     plt.close(fig)
@@ -187,7 +187,7 @@ def plot_dynamic_scenario():
     fig.tight_layout()
 
     fig.savefig(
-        RESULTS_DIR / "dynamic_states.png",
+        str(RESULTS_DIR / "dynamic_states.png"),
         dpi=300
     )
     plt.close(fig)
@@ -243,7 +243,7 @@ def plot_fault_events():
     fig.tight_layout()
 
     fig.savefig(
-        RESULTS_DIR / "hil_fault_timeline.png",
+        str(RESULTS_DIR / "hil_fault_timeline.png"),
         dpi=300
     )
 
